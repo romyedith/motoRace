@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carrera de motos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- El núcleo de Firebase JS SDK siempre es necesario y debe aparecer primero -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+    <!-- TODO: Agrega SDKs para los productos Firebase que quieres usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Configuración de Firebase de tu app web.
+      const firebaseConfig = {
+        apiKey: "AIzaSyD_p0S5F0l7XOhDVDzs3PYWs8rZBHbhOlk",
+        authDomain: "motos-race.firebaseapp.com",
+        databaseURL: "https://motos-race-default-rtdb.firebaseio.com",
+        projectId: "motos-race",
+        storageBucket: "motos-race.appspot.com",
+        messagingSenderId: "299398206076",
+        appId: "1:299398206076:web:f33771cd6743ae5be62ff9"
+      };
+      // Inicializa Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/player.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
